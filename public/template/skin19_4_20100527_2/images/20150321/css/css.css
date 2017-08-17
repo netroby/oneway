@@ -1,0 +1,278 @@
+.slidetoolbarContainr {
+	position:fixed;
+	_position:absolute;
+	top:0px;
+	left:0;
+	width:50px;
+	height:100%;
+	z-index:500
+}
+.slidetoolbar {
+	background:#fafafa;
+	width:50px;
+	height:100%;
+	left:-50px;
+	padding-top:75px;
+	position:relative;
+	font-size:12px
+}
+.slidetoolbar .applist {
+	text-align:center;
+	width:50px;
+	position:relative
+}
+.slidetoolbar .appitem {
+	position:relative;
+	height:70px;
+	margin-bottom:10px;
+	_margin-bottom:0
+}
+.slidetoolbar .icon {
+	position:relative;
+	display:block;
+	width:50px;
+	height:20px;
+	padding-top:48px;
+	color:#999
+}
+.slidetoolbar .hot {
+	position:absolute;
+	z-index:5;
+	right:5px;
+	top:4px;
+	width:8px;
+	height:8px;
+	background:url(../images/slidetoolbar-icon.png) no-repeat -69px -10px
+}
+.slidetoolbar .icon-img {
+	height:36px;
+	width:36px;
+	position:absolute;
+	top:8px;
+	left:7px
+}
+.slidetoolbar .appitem-hover .icon {
+	background-color:#f7f7f7;
+	text-decoration:none
+}
+.slidetoolbar .icon-0 {
+	background-position:7px 8px
+}
+.slidetoolbar .icon-1 {
+	background-position:7px -74px
+}
+.slidetoolbar .icon-2 {
+	background-position:7px -158px
+}
+.slidetoolbar .icon-3 {
+	background-position:7px -243px
+}
+.slidetoolbar .icon-4 {
+	background-position:7px -327px
+}
+.slidetoolbar .content,.slidetoolbar .horoscope {
+	display:none;
+	position:absolute;
+	top:-1px;
+	left:50px;
+	width:210px;
+	height:68px;
+	border:1px solid #e6e6e6;
+	border-left:none;
+	overflow:hidden;
+	background:#f7f7f7;
+	text-align:left;
+	z-index:500
+}
+.slidetoolbar .appitem-hover .content,.slidetoolbar .appitem-hover .horoscope {
+	display:block
+}
+.slidetoolbar .content .text,.slidetoolbar .horoscope .text {
+	width:140px;
+	overflow:hidden;
+	white-space:nowrap
+}
+.slidetoolbar .horoscope .text {
+	width:145px;
+	padding:8px 0 0 10px
+}
+.slidetoolbar .content .link {
+	width:130px;
+	padding-left:10px;
+	height:34px;
+	display:block;
+	font-size:14px;
+	line-height:46px;
+	overflow:hidden;
+	color:#666;
+	white-space:nowrap
+}
+.slidetoolbar .content .link:hover {
+	color:#f30
+}
+.slidetoolbar .content .link2 {
+	margin-left:5px
+}
+.slidetoolbar .content .desc,.slidetoolbar .horoscope .desc {
+	display:block;
+	width:130px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	color:#999
+}
+.slidetoolbar .content .desc {
+	height:34px;
+	padding-left:10px;
+	line-height:18px
+}
+.slidetoolbar .horoscope .desc {
+	height:30px;
+	line-height:14px
+}
+.slidetoolbar .content .desc:hover,.slidetoolbar .horoscope .desc:hover {
+	text-decoration:none
+}
+.slidetoolbar .horoscope .desc {
+	width:145px
+}
+.slidetoolbar .content .image {
+	position:absolute;
+	right:0;
+	top:0
+}
+.slidetoolbar .horoscope .image {
+	position:absolute;
+	right:3px;
+	top:10px;
+	width:48px;
+	height:48px;
+	background:url(../images/slidexingzuo.png) no-repeat
+}
+.slidetoolbar .horoscope .aries {
+	background-position:0 0
+}
+.slidetoolbar .horoscope .taurus {
+	background-position:0 -48px
+}
+.slidetoolbar .horoscope .gemini {
+	background-position:0 -96px
+}
+.slidetoolbar .horoscope .cancer {
+	background-position:0 -144px
+}
+.slidetoolbar .horoscope .leo {
+	background-position:0 -192px
+}
+.slidetoolbar .horoscope .virgo {
+	background-position:0 -240px
+}
+.slidetoolbar .horoscope .libra {
+	background-position:0 -288px
+}
+.slidetoolbar .horoscope .scorpio {
+	background-position:0 -336px
+}
+.slidetoolbar .horoscope .sagittarius {
+	background-position:0 -384px
+}
+.slidetoolbar .horoscope .capricorn {
+	background-position:0 -432px
+}
+.slidetoolbar .horoscope .aquarius {
+	background-position:0 -480px
+}
+.slidetoolbar .horoscope .pisces {
+	background-position:0 -528px
+}
+.slidetoolbar .horoscope .select {
+	display:inline-block;
+	line-height:30px;
+	_line-height:34px;
+	font-size:14px;
+	color:#666;
+	background:url(../images/slidetoolbar-icon.png) no-repeat -32px -216px;
+	cursor:pointer;
+	vertical-align:top;
+	padding-right:15px
+}
+.slidetoolbar .horoscope .select-content {
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	top:0;
+	left:0;
+	background:#f7f7f7;
+	z-index:5
+}
+.slidetoolbar .horoscope .content-list {
+	padding:4px 8px
+}
+.slidetoolbar .horoscope .content-list-item {
+	width:48px;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+	cursor:pointer;
+	color:#666
+}
+.slidetoolbar .horoscope .list-item-hover {
+	background:#e6e6e6
+}
+.slidetoolbar .horoscope .star {
+	display:inline-block;
+	height:30px;
+	width:85px;
+	background:url(../images/index_icon.png) no-repeat;
+	vertical-align:top;
+	margin-left:3px
+}
+.slidetoolbar .horoscope .star-5 {
+	background-position:-186px -1320px
+}
+.slidetoolbar .horoscope .star-4 {
+	background-position:-186px -1352px
+}
+.slidetoolbar .horoscope .star-3 {
+	background-position:-186px -1384px
+}
+.slidetoolbar .horoscope .star-2 {
+	background-position:-186px -1416px
+}
+.slidetoolbar .horoscope .star-1 {
+	background-position:-186px -1448px
+}
+.slidetoolbar-closebtn {
+	position:absolute;
+	height:50px;
+	width:50px;
+	bottom:50px;
+	background:url(../images/slidetoolbar-icon.png) no-repeat;
+	background-color:#e6e6e6;
+	cursor:pointer;
+	display:none
+}
+.slidetoolbar-closebtn:hover {
+	background-color:#f1f1f1
+}
+.slideclosebtn-open {
+	background-position:-44px -161px
+}
+.slideclosebtn-close {
+	background-position:-49px -73px
+}
+.slidetoolbar .sppitemwrap {
+	position:relative;
+	height:70px;
+	margin-bottom:10px
+}
+.slidetoolbar .flipicon {
+	height:54px;
+	position:absolute;
+	top:-10px;
+	right:50px
+}
+.slidetoolbar .flipicon .flipcon {
+	height:54px
+}

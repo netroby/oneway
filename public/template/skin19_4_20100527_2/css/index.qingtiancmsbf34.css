@@ -1,0 +1,6 @@
+.m-search{height:105px}
+.m-fixed .m-search{height:78px}
+.baiduTopAdvWrap{height: 29px;padding-left: 260px;padding-top:2px;overflow:hidden;}
+.baiduTopAdvWrap li{height: 25px;line-height: 25px;white-space: nowrap;float: left;display: inline;margin-right: 15px;}
+.baiduTopAdvWrap .title{margin-right: 2px;font: 12px/25px "宋体";color: #999;}
+.m-fixed{ height:103px; }.m-fixed  .baiduTopAdvWrap{ display: none; }.m-fixed{ height: auto; } 
