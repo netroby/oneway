@@ -221,7 +221,7 @@ ul.fcolnavi .active a,ul.fcolnavi .active em{background: #63aae9;color:#fff; wid
 	text-align:center 
 
 }
-.main{font-size:14px;margin-left:250px;width:750px;}
+.main{font-size:14px;}
 #bm{width:726px;overflow:hidden;}
 .col-fmSite{border-width:1px;}
 .fmSite-tab{line-height:29px;}
@@ -540,7 +540,7 @@ ul.appWrap li{ width:220px; }
 	.ecom ul.mslide li{height:120px;zoom:1;}
 	.ecom .snum{top:108px;}
 ul.nslist{padding:10px 0;width:204px;margin:0px auto;}
-ul.nslist li{line-height:28px;height:28px;/*mozÐè¶¨Òå¸ß¶È*/background:url(../images/spirit.png) no-repeat -5px -824px;padding-left:8px;}
+ul.nslist li{line-height:28px;height:28px;/*mozï¿½è¶¨ï¿½ï¿½ß¶ï¿½*/background:url(../images/spirit.png) no-repeat -5px -824px;padding-left:8px;}
 ul.nslist li a{font-size:14px;color:#3d3d3d;display:inline-block;width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 ul.nslist li a:hover{color:red;}
 ul.msColi{height:68px;width:204px;margin:0px auto;  }
@@ -552,7 +552,7 @@ ul.msColi li cite{width:100px;height:16px;line-height:16px;display:inline-block;
 	:root ul.msColi cite{background:rgba(0,0,0,0.5);}
 	* html ul.msColi li a:hover{text-decoration:none!important ;}
 ul.msCover{padding:9px 0 13px;}
-ul.msCover li{line-height:26px;height:26px;/*mozÐè¶¨Òå¸ß¶È*/background:url(../images/spirit.png) no-repeat -2px -858px;padding-left:12px;width:98px;display:inline;float:left;}
+ul.msCover li{line-height:26px;height:26px;/*mozï¿½è¶¨ï¿½ï¿½ß¶ï¿½*/background:url(../images/spirit.png) no-repeat -2px -858px;padding-left:12px;width:98px;display:inline;float:left;}
 ul.msCover li a{font-size:14px;color:#3d3d3d;display:inline-block;width:95px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 ul.msCover li a:hover{color:red;}
 	.ecom ul.msCover li{background-position:-5px -824px;}
@@ -898,7 +898,7 @@ _background-image: none; /* IE6 */
 .box-shadow{
 	-moz-box-shadow:0px 0px 4px #c7c7c7;/*firefox*/
 	-webkit-box-shadow:0px 0px 4px #c7c7c7;/*webkit*/
-	box-shadow:0px 0px 4px #c7c7c7;/*opera»òie9*/
+	box-shadow:0px 0px 4px #c7c7c7;/*operaï¿½ï¿½ie9*/
 }
 .sortSite li .s2{ width:17px; }
 .sortSite li .s2 img{ position:relative;top:3px; }
@@ -971,7 +971,7 @@ _background-image: none; /* IE6 */
 .topbar .sets .themeChange a{ padding:7px 0px 6px; height:13px;line-height:13px;font-family:Tahoma;display:block;width:70px;text-align:center;padding-left:8px;text-decoration:none;background:url( ../images/spirit.png?2014 ) #f1f1f1 2px -277px  no-repeat; }
 .topbar .sets .themeChangeDown a{ background-position:2px -314px; }
 
-/*Ôö¼ÓÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .botNavi .btmTxt a{color:#8c8c8c}
 #fm b {
 	font-family:Arial;
