@@ -284,6 +284,7 @@ ul.fcolnavi .active a,ul.fcolnavi .active em{background: #63aae9;color:#fff; wid
 .kpWrap .sortSite li em.four{display:inline-block;width:80px;_width:80px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}
 .sortSite li em.four{display:inline-block;width:80px;_width:80px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}
 
+.fldiv {float:left;width:93%;display:inline-block}
 .sortSite li a{}
 .sortSite li a.s{width:47px;}
 .kpWrap .sortSite li a.s{width:52px;}
