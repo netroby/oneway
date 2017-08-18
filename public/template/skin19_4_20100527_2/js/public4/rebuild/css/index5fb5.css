@@ -279,10 +279,10 @@ ul.fcolnavi .active a,ul.fcolnavi .active em{background: #63aae9;color:#fff; wid
 .sortSite li{height:30px;line-height:30px;overflow:hidden;}
 .sortSite li.hover{background:#f4f4f4;}
 	* html .sortSite li.hover{border-left:none;border-right:none;}
-.kpWrap .sortSite li em{display:inline-block;width:116px;_width:116px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}		
-.sortSite li em{display:inline-block;width:106px;_width:106px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}	
-.kpWrap .sortSite li em.four{display:inline-block;width:112px;_width:112px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}
-.sortSite li em.four{display:inline-block;width:102px;_width:102px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}
+.kpWrap .sortSite li em{display:inline-block;width:80px;_width:80px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}		
+.sortSite li em{display:inline-block;width:80px;_width:80px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}	
+.kpWrap .sortSite li em.four{display:inline-block;width:80px;_width:80px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}
+.sortSite li em.four{display:inline-block;width:80px;_width:80px;overflow:hidden;white-space:nowrap;text-over:ellipsis;}
 
 .sortSite li a{}
 .sortSite li a.s{width:47px;}
