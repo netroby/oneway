@@ -319,7 +319,8 @@ function FindProxyForURL(url, host) {
         'zendesk.com'
 
     ];
-    for (var i = 0; len = hosts.length; i < len; i++) {
+    var len = hosts.length;
+    for (var i = 0; i < len; i++) {
         if (host.indexOf(hosts[i]) > -1) {
             return S5PROXY;
         }
