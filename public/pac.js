@@ -258,16 +258,20 @@ function FindProxyForURL(url, host) {
         should_proxy = true;
     }
 
-    // If the requested website is hosted within the internal network, send direct.
-    if (isPlainHostName(host)) {
-        var host_resolved = dnsResolve(host);
-        if (shExpMatch(host, "*.local") ||
-            isInNet(host_resolved, "10.0.0.0", "255.0.0.0") ||
-            isInNet(host_resolved, "172.16.0.0",  "255.240.0.0") ||
-            isInNet(host_resolved, "192.168.0.0",  "255.255.0.0") ||
-            isInNet(host_resolved, "127.0.0.0", "255.255.255.0")) {
-            should_proxy = false;
+    try {
+        // If the requested website is hosted within the internal network, send direct.
+        if (isPlainHostName(host)) {
+            var host_resolved = dnsResolve(host);
+            if (shExpMatch(host, "*.local") ||
+                isInNet(host_resolved, "10.0.0.0", "255.0.0.0") ||
+                isInNet(host_resolved, "172.16.0.0",  "255.240.0.0") ||
+                isInNet(host_resolved, "192.168.0.0",  "255.255.0.0") ||
+                isInNet(host_resolved, "127.0.0.0", "255.255.255.0")) {
+                should_proxy = false;
+            }
         }
+    } catch (e) {
+        console.log(e);
     }
 
 
