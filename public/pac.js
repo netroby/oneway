@@ -75,8 +75,7 @@ function FindProxyForURL(url, host) {
         'fastly.net',
         'fbcdn.',
         'fb.me',
-        'feedburner.com',
-        'feedburner.net',
+        'feedburner.',
         'feedly.com',
         'ff.im',
         'flare.me',
@@ -137,7 +136,6 @@ function FindProxyForURL(url, host) {
         'mysql.com',
         'nicovideo.jp',
         'namecheap.com',
-        'netroby.com',
         'nimg.jp',
         'nextmedia.com',
         'nltk.org',
@@ -192,9 +190,7 @@ function FindProxyForURL(url, host) {
         'rmdown.com',
         'rtbtc.net',
         'saltstack.com',
-        'scala-lang.org',
-        'scala-sbt.org',
-        'scalatest.org',
+        'scala',
         'secretchina.com',
         'serverfault.com',
         'sexinsex.net',
@@ -203,12 +199,10 @@ function FindProxyForURL(url, host) {
         'slideshare.net',
         'sns.ly',
         'softlayer.com',
-        'sourceforge.com',
-        'sourceforge.net',
+        'sourceforge.',
         'ssl-images-amazon.com',
         'sstatic.net',
-        'stackexchange.com',
-        'stackoverflow.com',
+        'stack',
         'stunnel.org',
         'superuser.com',
         'suse.com',
@@ -241,8 +235,7 @@ function FindProxyForURL(url, host) {
         'wbur.org',
         'wiki',
         'wkbug.com',
-        'wlxrs.com',
-        'wlxrs.com',
+        'wlxrs.',
         'wordpress.com',
         'wretch.cc',
         'wsimg.com',
@@ -260,25 +253,27 @@ function FindProxyForURL(url, host) {
         'ytimg.com',
         'zend'
     ];
-    var len = hosts.length;
-    for (var i = 0; i < len; i++) {
-        if (host.indexOf(hosts[i]) > -1) {
-            return S5PROXY;
+    var should_proxy = false;
+    if (hosts.findIndex( i => { return host.indexOf(i) > -1; }) > -1) {
+        should_proxy = true;
+    }
+
+    // If the requested website is hosted within the internal network, send direct.
+    if (isPlainHostName(host)) {
+        var host_resolved = dnsResolve(host);
+        if (shExpMatch(host, "*.local") ||
+            isInNet(host_resolved, "10.0.0.0", "255.0.0.0") ||
+            isInNet(host_resolved, "172.16.0.0",  "255.240.0.0") ||
+            isInNet(host_resolved, "192.168.0.0",  "255.255.0.0") ||
+            isInNet(host_resolved, "127.0.0.0", "255.255.255.0")) {
+            should_proxy = false;
         }
     }
 
 
-    // If the requested website is hosted within the internal network, send direct.
-    if (isPlainHostName(host) ||
-        shExpMatch(host, "*.local") ||
-        isInNet(dnsResolve(host), "10.0.0.0", "255.0.0.0") ||
-        isInNet(dnsResolve(host), "172.16.0.0",  "255.240.0.0") ||
-        isInNet(dnsResolve(host), "192.168.0.0",  "255.255.0.0") ||
-        isInNet(dnsResolve(host), "127.0.0.0", "255.255.255.0")) {
-        return DIRECT;
+    if (should_proxy == true) {
+        return S5PROXY;
     }
-
-
     // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
     return DIRECT;
 
