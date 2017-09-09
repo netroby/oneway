@@ -55,6 +55,7 @@ function FindProxyForURL(url, host) {
         'clojure.org',
         'crbug.com',
         'debian.org',
+        'devolutions.',
         'disqus.com',
         'dmm.co.jp',
         'dnspython.org',
