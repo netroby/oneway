@@ -79,6 +79,7 @@ function FindProxyForURL(url, host) {
         'feedburner.',
         'feedly.com',
         'ff.im',
+        'firebaseio.com',
         'flare.me',
         'frantech.com',
         'ftchinese.com',
