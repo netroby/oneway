@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "sudo rsync --rsync-path='sudo rsync'  -avzP ./* /data/www/oneway.netroby.com"
+                sh "rsync -avzP ./* /home/data/www/oneway.netroby.com"
             }
         }
     }
