@@ -15,7 +15,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "docker run --rm -v $(pwd):/src -v /data:/data netroby/alpine-rsync rsync -avzP /src/* /data/www/oneway.netroby.com/"                
+                def workspace = pwd()
+                sh "docker run --rm -v ${workspace}:/src -v /data:/data netroby/alpine-rsync rsync -avzP /src/* /data/www/oneway.netroby.com/"                
             }
         }
     }
