@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "cp -TRv ./ /home/data/www/oneway.netroby.com/"
+                sh "cp -TRv ./ /data/www/oneway.netroby.com/"
             }
         }
     }
