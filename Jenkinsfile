@@ -15,8 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "cp -TRv ./ /data/www/oneway.netroby.com/"                
-                sh "rm -rf /data/www/oneway.netroby.com/.git"
+                sh "docker run --rm -v $(pwd):/src -v /data:/data netroby/alpine-rsync rsync -avzP /src/* /data/www/oneway.netroby.com/"                
             }
         }
     }
