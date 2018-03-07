@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host) {
 
-    var S5PROXY = "SOCKS5 127.0.0.1:1080", DIRECT = "DIRECT";
+    var S5PROXY = "PROXY 127.0.0.1:8123", DIRECT = "DIRECT";
     var hosts = [
         '1984bbs.org',
         'w3schools.com',
