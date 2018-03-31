@@ -140,6 +140,7 @@ function FindProxyForURL(url, host) {
         'namecheap.com',
         'nimg.jp',
         'nextmedia.com',
+        'medium.com',
         'nltk.org',
         'note.acmu.org',
         'novell.com',
