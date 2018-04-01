@@ -51,6 +51,7 @@ function FindProxyForURL(url, host) {
         'codecademy.com',
         'codehaus.org',
         'cosmicpay.com',
+        'cfos.de',
         'coursera.org',
         'clojure.org',
         'crbug.com',
