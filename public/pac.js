@@ -108,6 +108,7 @@ function FindProxyForURL(url, host) {
         'irccloud-cdn.com',
         'irccloud.com',
         'incapsula.com',
+        'infoq.com',
         'instagram.com',
         'internetfreedom.org',
         'japan-whores.com',
