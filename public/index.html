@@ -31,6 +31,7 @@
                                             <li class="tab-item"><a href="https://www.bing.com">Bing</a></li>
                                             <li class="tab-item"><a href="https://www.google.com">谷歌</a></li>
                                             <li class="tab-item"><a href="https://www.sogou.com">搜狗</a></li>
+                                            <li class="tab-item"><a href="javascript:void(0);" onclick="javascript:downloadSignalBeta()">下载Signal Beta</a></li>
                                         </ul>
                                     </div>
                                     <div id="fm" class="box-fmSite" style="display:block;padding-top:0px">
@@ -265,6 +266,26 @@
     </div>
     </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/esprima/2.7.3/esprima.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.11.0/js-yaml.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        function downloadSignalBeta() {
+            axios.get('https://updates.signal.org/desktop/beta.yml')
+                .then(function (response) {
+                    var doc = jsyaml.load(response.data);
+                    console.log(doc);
+                    if (doc.files && doc.files[0] && doc.files[0].url) {
+                        console.log(doc.files[0].url);
+                        var url = 'https://updates.signal.org/desktop/' + doc.files[0].url
+                        top.location = url;
+                    }
+                });
+                return false;
+        }
+    </script>
 </body>
 
 </html>
